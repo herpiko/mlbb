@@ -1,5 +1,7 @@
 github.com/darmawan01/toldata v0.0.0-20221013045656-aace02b1e457 h1:RONmok41OuhyKM032mUOIZRVg/bRtEY8baZ/f3Fg9UM=
 github.com/darmawan01/toldata v0.0.0-20221013045656-aace02b1e457/go.mod h1:zqYlL9z1uK3Vl8W9KiCeyf0CSAi6phTRH+wgdu12FVE=
+github.com/ftamhar/nrpc v0.1.0 h1:g3Dsga5TXSqilyHKHC/gITZsknwqO3q7B1+Z+g+1P3Q=
+github.com/ftamhar/nrpc v0.1.0/go.mod h1:1pgoEWOV7/sPUuTIrcmCJFPxP/dBRQFPookEDLqOE98=
 github.com/golang/protobuf v1.5.0/go.mod h1:FsONVRAS9T7sI+LIUmWTfcYkHO4aIWwzhcaSAoJOfIk=
 github.com/golang/protobuf v1.5.2 h1:ROPKBNFfQgOUMifHyP+KYbvpjbdoFNs+aK7DXlji0Tw=
 github.com/golang/protobuf v1.5.2/go.mod h1:XVQd3VNwM+JqD3oG2Ue2ip4fOMUkwXdXDdiuN0vRsmY=

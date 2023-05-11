@@ -47,17 +47,21 @@ func (s *server) Greeting(ctx context.Context, req *hello.GreetingRequest) (resp
 
 func (s *server) Upload(stream hello.HelloServices_UploadToldataServer) {
 	var err error
-	var ur *hello.UploadRequest
+	//var ur *hello.UploadRequest
 
 	name := uuid.NewString() + ".jpeg"
-	f, err := os.Create(name)
-	if err != nil {
-		stream.Error(err)
-	}
-	defer f.Close()
+	log.Println(name)
+
+	/*
+		f, err := os.Create(name)
+		if err != nil {
+			stream.Error(err)
+		}
+		defer f.Close()
+	*/
 
 	for {
-		ur, err = stream.Receive()
+		_, err = stream.Receive()
 		if err == io.EOF {
 			break
 		}
@@ -65,7 +69,7 @@ func (s *server) Upload(stream hello.HelloServices_UploadToldataServer) {
 		if err != nil {
 			stream.Error(err)
 		}
-		f.Write(ur.Data)
+		//f.Write(ur.Data)
 	}
 
 	err = stream.Done(&hello.UploadResponse{
